@@ -1,0 +1,24 @@
+{
+  "name": "smart-form-tester",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "server": "node backend/server.js",
+    "dev:all": "concurrently \"npm run dev\" \"npm run server\"",
+    "test:integration": "vitest --config vitest.config.js tests/integration",
+    "test:e2e": "playwright test",
+    "test:e2e:ui": "playwright test --ui",
+    "test:e2e:debug": "playwright test --debug",
+    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "format": "prettier --write \"src/**/*.{js,jsx,css,md}\""
+  },
+  "devDependencies": {
+    "form-data": "^4.0.4",
+    "node-fetch": "^3.3.2",
+    "vitest": "^4.0.6"
+  }
+}
