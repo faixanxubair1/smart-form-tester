@@ -16,7 +16,7 @@ AI-powered web form with comprehensive automation testing suite.
 ## 📦 Installation
 ```bash
 # Clone repository
-git clone https://github.com/yourusername/smart-form-tester.git
+git clone https://github.com/faixanxubair1/smart-form-tester.git
 cd smart-form-tester
 
 # Install dependencies
